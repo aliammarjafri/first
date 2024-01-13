@@ -1,0 +1,35 @@
+Create a calculator which asks for the inputs from user and performs one of the following operations on them as per user's choice:
+Calculate sum 
+Calculate difference(only positive value)
+Calculate quotient
+Calculate remainder
+Calculate average
+Calculate interest for given percentage.
+
+
+def numCalc(num1, num2):
+    su = num1 + num2
+
+    divs = num1 / num2
+
+    prod = num1 * num2
+    diff = num1 - num2
+    return su, divs, prod, diff
+nu1 = int(input("First value"))
+
+nu2 = int(input("Second value"))
+
+res = numCalc(nu1, nu2)
+x,y,z,u = numCalc(nu1, nu2)
+
+print("Sum of values entered is ", x)
+
+print("Div of values entered is ", y)
+
+output:
+First value 20
+Second value 10
+Sum of values entered is  30
+Div of values entered is  2.0
+Prod of values entered is  200
+Diff of values entered is  10
